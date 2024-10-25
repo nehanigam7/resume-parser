@@ -1,0 +1,32 @@
+1. Flow Chart
+[Start] -> [Upload Resumes] -> [Server Receives Files] 
+       -> [Extract Text from Files] -> [Parse Resume Data] 
+       -> [Return Parsed Data as JSON] -> [End]
+
+2. Connect to Server and Run the Code
+Step 1: Install Node.js
+Verify installation by running in the terminal:
+
+node -v
+npm -v
+
+Step 2: Get the Project Code
+Download or clone the project files.
+In the terminal, go to the project folder
+
+Step 3: Install Required Libraries
+Install dependencies by running this command in the terminal:
+
+npm install
+
+Step 4: Start the Server
+To start the server, run:
+
+node server.js
+
+Step 5: Upload Resumes and Get Parsed Data
+Use Postman or curl to send a POST request to upload resumes:
+URL: http://localhost:5000/upload
+Method: POST
+Body: In Postman, use "form-data" and add files to upload one or more resumes.
+The server will return parsed data in JSON format.
